@@ -1,6 +1,8 @@
 // Header.js
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styles from '../styles/Header.module.css';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,11 +17,13 @@ const Header = () => {
       <a href='https://en.wikipedia.org/wiki/Lego'>
       <div className={styles.logoContainer}>
         {/* Image of the Lego brick */}
-        <img
-          src="/Lego01.png" // Update the path to the Lego image
-          alt="Lego Brick"
-          className={styles.legoImage}
-        />
+        <Image
+            src="/Lego01.png" // Update the path to the Lego image
+            alt="Lego Brick"
+            className={styles.legoImage}
+            width={50}
+            height={50}
+          />
       </div>
       </a>
 

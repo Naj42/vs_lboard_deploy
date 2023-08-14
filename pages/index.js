@@ -1,6 +1,7 @@
 // pages/index.js
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { fetchLeaderboardData } from './utils/api';
 import styles from '../styles/leaderboard.module.css';
@@ -72,11 +73,12 @@ const ScrollButtonWithLeaderboard = () => {
                   <td>{user.score}</td>
                   <td>{user.country}</td>
                   <td>
-                      <img
+                  <Image
                         src={user.photo} // Assuming the API provides the image URL
                         alt={`Avatar of ${user.name}`}
-                        style={{ maxWidth: '50px', maxHeight: '50px' }} // Adjust the image size as needed
-                      />
+                        width={50} // Set the desired width
+                        height={50} // Set the desired height
+                  />
                     </td>
                 </tr>
               ))}
