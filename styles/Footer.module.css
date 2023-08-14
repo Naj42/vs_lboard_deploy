@@ -1,0 +1,33 @@
+/* styles/Footer.module.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Set the position to relative */
+    font-family: 'Trebuchet MS';
+  }
+  
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Set the position to absolute */
+    top: -5px; /* Position icons at the top of the footer */
+    left: 50%; /* Center the icons horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin:0 10px; /*Top to bottom margin, left to right margin*/
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #007bff;
+  }
+  
+  /* Adjust the styles as needed */
+  

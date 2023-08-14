@@ -1,0 +1,113 @@
+/* Header.module.css */
+/* Header styles */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align children to the left and right */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    text-align: left;
+    font-family: 'Trebuchet MS';
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+  }
+  
+
+  .headerText {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    
+
+  }
+
+  /* White-bordered container for the logo */
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Style for the image */
+  .legoImage {
+    max-width: 50px; /* Adjust the image size as needed */
+    
+  }
+  
+
+
+
+
+
+  
+  
+  /* Hamburger menu toggle icon styles */
+  .menu-toggle {
+    display: flex; /* Display as a flex container */
+    flex-direction: column; /* Stack the bars vertically */
+    align-items: flex-end; /* Align the bars to the right side */
+    cursor: pointer;
+    padding: 5px; /* Optional padding for better click target */
+  }
+  
+  .bar {
+    width: 30px; /* Width of each bar */
+    height: 4px; /* Height of each bar */
+    background-color: white;
+    margin: 3px 0; /* Margin between bars */
+    transition: transform 0.2s, opacity 0.2s; /* Add smooth transitions */
+   
+  }
+  
+  /* Hamburger menu styles */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Navigation menu styles */
+  .nav-container {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .nav-container.open {
+    display: block;
+    position: absolute;
+    right: 100px; /* Adjust this value to control the amount of shifting */
+   
+    
+  }
+  
+
+  .nav-list{
+    display: flex;
+  }
+
+  /* Add spacing between the menu items */
+  .nav-list li {
+    margin-left: 10px; /* Adjust this value to control the amount of spacing between items */
+  }
+  
+  /* Additional styling for your logo, nav-list, etc. */
+  

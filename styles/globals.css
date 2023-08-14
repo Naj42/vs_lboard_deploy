@@ -16,12 +16,130 @@
   }
 }
 
+
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  height: 100%;
+
 }
+
+
+
+
+
+
+
+/*New NavBar*/
+/* Add this CSS to your stylesheet */
+.menu-toggle {
+  display: none; /* Hide the toggle icon by default */
+  cursor: pointer;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-container {
+  display: none; /* Hide the navigation menu by default */
+}
+
+.nav-container.open {
+  display: block; /* Show the navigation menu when open */
+}
+
+/* Add additional styling for your logo, nav-list, etc. */
+
+
+
+
+
+
+
+.leaderboardTable {
+  max-width: 800px; /* Adjust the max-width as needed */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Center the table */
+  font-family: Arial, sans-serif;
+  border-radius: 10px; /* Rounded edges */
+  overflow: hidden; /* Hide overflow content (for rounded edges) */
+}
+
+.leaderboardTable th,
+.leaderboardTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.leaderboardTable th {
+  background-color: #f2f2f3;
+  color: black;
+}
+
+.leaderboardTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboardTable tr:nth-child(odd) {
+  background-color: black;
+  color: #f2f2f2; /* Text color for odd rows */
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 10px;
+}
+
+
+/* .leaderboardTable tr:hover {
+  background-color: #ddd;
+} */
+
+
+
+
+button {
+  background-color: #f5f5f5;
+  color: black;
+  padding: 15px 25px; /* Adjust padding */
+  border-radius: 10px; /* Round the border */
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button:hover{
+  box-shadow: 0 0 5px  white, 
+  0 0 25px white, 0 0 50px  white,
+  0 0 100px  white, 0 0 200px  white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
