@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
-import { fetchLeaderboardData } from './utils/api';
+import { fetchLeaderboardData } from '../components/api';
 import styles from '../styles/leaderboard.module.css';
 
 
@@ -37,7 +37,7 @@ const ScrollButtonWithLeaderboard = () => {
 
 
   return (
-    <div>
+    <div> 
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
